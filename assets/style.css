@@ -1,0 +1,434 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafcf5;
+  color: #0f1407;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Rest of your CSS code goes here */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafcf5;
+  color: #0f1407;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: transparent;
+  flex-grow: 1;
+}
+
+.hero {
+  height: 550px;
+  background-image: url("../img/heroimg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(157, 198, 81, 0.2);
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+
+.grid-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  align-items: center;
+  padding: 30px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:nth-child(1) {
+  background-color: rgba(157, 198, 81, 0.1);
+  box-shadow: 0 10px 20px rgba(157, 198, 81, 0.2);
+}
+
+.grid-item:nth-child(2) {
+  background-color: rgba(144, 219, 179, 0.1);
+  box-shadow: 0 10px 20px rgba(144, 219, 179, 0.2);
+}
+
+.grid-item:nth-child(3) {
+  background-color: rgba(112, 208, 184, 0.1);
+  box-shadow: 0 10px 20px rgba(112, 208, 184, 0.2);
+}
+
+.grid-item:nth-child(4) {
+  background-color: rgba(157, 198, 81, 0.1);
+  box-shadow: 0 10px 20px rgba(157, 198, 81, 0.2);
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #0f1407;
+}
+
+h2 {
+  background: linear-gradient(45deg, #9dc651, #90dbb3, #70d0b8);
+  background-size: 400%;
+  color: white; /* Set the text color to white for better contrast */
+  transition: background-size 0.3s ease; /* Smooth transition effect */
+}
+
+h2:hover {
+  background-size: 100%; /* Expand the gradient on hover */
+  cursor: pointer; /* Change the cursor to indicate interactivity */
+}
+
+p {
+  font-size: 16px;
+  color: #0f1407;
+}
+
+footer {
+  background-color: rgba(157, 198, 81, 0.2);
+  color: #0f1407;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+footer a {
+  color: #0f1407;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+footer a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #9dc651;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+footer a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Add subtle animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.grid-item {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.grid-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.grid-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.grid-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.grid-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+footer {
+  background-color: rgba(157, 198, 81, 0.2);
+  color: #0f1407;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+.footer-main {
+  margin-bottom: 40px;
+}
+
+.footer-main h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.footer-main .journey {
+  background: linear-gradient(45deg, #9dc651, #90dbb3, #70d0b8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+.explore-button {
+  display: inline-block;
+  padding: 15.6px 31.2px; /* Increased padding by 30% */
+  margin-top: 20px;
+  background: linear-gradient(45deg, #9dc651, #90dbb3);
+  color: #fafcf5;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.3em; /* Increased font size by 30% */
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(157, 198, 81, 0.2);
+}
+
+.explore-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(157, 198, 81, 0.3);
+  background: linear-gradient(45deg, #90dbb3, #70d0b8);
+}
+
+.footer-divider {
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(to right, #9dc651, #90dbb3, #70d0b8);
+  margin: 30px auto;
+}
+
+.footer-creator {
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.footer-creator a {
+  color: #0f1407;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 1px;
+}
+
+.footer-creator a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #9dc651;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.footer-creator a:hover::after {
+  transform: scaleX(1);
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgba(157, 198, 81, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: rgba(157, 198, 81, 0.2);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: #fafcf5;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  max-width: 90%;
+  width: 500px;
+  text-align: center;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #0f1407;
+}
+
+model-viewer {
+  width: 100%; /* Set the width of the model viewer to fill the container */
+  height: 400px; /* Set a fixed height */
+  background-color: #f0f0f0; /* Optional: Add background color if needed */
+  margin: 20px 0; /* Optional: Add margin for spacing */
+  border-radius: 10px; /* Optional: Round the corners of the model viewer */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow around the viewer */
+}
+
+.item1 {
+  width: 100%; /* Set the width of the model viewer to fill the container */
+  height: 400px; /* Set a fixed height */
+  background-color: #f0f0f0; /* Optional: Add background color if needed */
+  margin: 20px 0; /* Optional: Add margin for spacing */
+  border-radius: 10px; /* Optional: Round the corners of the model viewer */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow around the viewer */
+  overflow: hidden; /* Ensures that content that overflows the container is hidden */
+}
+
+.item1 img {
+  width: 100%; /* Make the image take up the full width of the container */
+  height: 100%; /* Make the image take up the full height of the container */
+  object-fit: cover; /* Ensures the image covers the entire container while cropping overflow */
+  object-position: center; /* Optional: Centers the image within the container */
+}
+
+/* Modal (hidden by default) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 60px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.intro-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro-title {
+  background: linear-gradient(45deg, #9dc651, #90dbb3, #70d0b8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.intro-text {
+  color: #0f1407;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro-text p {
+  margin-bottom: 1.5rem;
+}
+
+.intro-text ul {
+  list-style-type: none;
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro-text ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-text ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0f1407;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .intro-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .intro-title {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+}
